@@ -21,6 +21,10 @@ public class Hello {
 
     @GetMapping("/key")
     public String profile() {
+       Integer l = null;
+       if (l == 10) {
+           System.out.println("!)10");
+       }
         return this.key;
     }
 }
