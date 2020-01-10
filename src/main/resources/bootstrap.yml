@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: myapp
+  profiles:
+    active: ${deploy.type}
+  cloud:
+    config:
+      uri: http://localhost:8181
+
+management:
+  security:
+    enabled: false
